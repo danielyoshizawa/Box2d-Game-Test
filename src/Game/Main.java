@@ -6,12 +6,12 @@ import org.newdawn.slick.SlickException;
 public class Main {
 
     public static void main(String [] args) {
-        World world = new World("Box2d Test Game");
+        Map map = new Map("Box2d Test Game");
 
         try
         {
-            AppGameContainer app = new AppGameContainer(world);
-            app.setDisplayMode(500, 400, false);
+            AppGameContainer app = new AppGameContainer(map);
+            app.setDisplayMode(600, 600, false);
             app.start();
 
         }
